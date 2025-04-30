@@ -4,19 +4,19 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Shop from "./pages/shop/shop";
 import Cart from "./pages/cart/cart";
 import Nav from "./components/nav";
-import{shopConextProvider} from "./Context/shopContext";
+import { ShopContextProvider } from "./Context/shopContext";
 function App() {
   return (
     <div className="App">
-      <shopConextProvider>
-      <Router>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Shop />} />
-          <Route path="/Cart" element={<Cart />} />
-        </Routes>
-      </Router>
-      </shopConextProvider>
+      <ShopContextProvider>
+        <Router>
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Shop />} />
+            <Route path="/Cart" element={<Cart />} />
+          </Routes>
+        </Router>
+      </ShopContextProvider>
     </div>
   );
 }
