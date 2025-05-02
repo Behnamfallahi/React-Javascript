@@ -4,7 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Shop from "./pages/shop/shop";
 import Cart from "./pages/cart/cart";
 import Nav from "./components/nav";
-import { ShopContextProvider } from "./Context/shopContext";
+import { ShopContextProvider } from "./Context/shopContext-context";
 function App() {
   return (
     <div className="App">

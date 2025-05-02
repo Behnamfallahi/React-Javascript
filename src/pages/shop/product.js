@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { ShopContext } from "../../Context/shopContext";
+import { ShopContext } from "../../Context/shopContext-context";
 
 const Product = (props) => {
   const { id, productName, productImage, price } = props.data;
   const { cartItems, addToCart, removeFromCart } = useContext(ShopContext);
-  const isInCart = cartItems?.some((item)=> item.id === id)
+  const isInCart = cartItems?.some((item) => item.id === id);
   return (
     <div className="col-3 mb-4">
       <div
@@ -28,12 +28,14 @@ const Product = (props) => {
 
       <h5 className="mt-2 text-center">{productName}</h5>
       <p className="text-center">price:{price}$</p>
-      { isInCart && <button
-        className="btn btn-info btn-sm"
-        onClick={() => removeFromCart(id)}
-      >
-        -
-      </button>}
+      {isInCart && (
+        <button
+          className="btn btn-info btn-sm"
+          onClick={() => removeFromCart(id)}
+        >
+          -
+        </button>
+      )}
       <span className="mx-1">
         {cartItems?.filter((row) => row.id === id)[0]?.count}
       </span>
