@@ -23,7 +23,7 @@ const Nav = () => {
             <Link to="/cart" className="nav-link">
               <FontAwesomeIcon icon={faShoppingCart} />
 
-              <span className="cart-items-count">{ItemCont}</span>
+              {ItemCont > 0 && <span className="cart-items-count">{ItemCont}</span>}
             </Link>
           </li>
         </ul>
