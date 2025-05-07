@@ -14,6 +14,8 @@ const Cart = () => {
             return <Product data={p}></Product>;
         })}
       </div>
+
+  
     </React.Fragment>
   );
 };

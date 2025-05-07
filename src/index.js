@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import * as ServicerWorker from "./serviceWorkerRegistration";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -9,3 +9,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
+ServicerWorker.register();

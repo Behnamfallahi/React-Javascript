@@ -5,12 +5,14 @@ import Shop from "./pages/shop/shop";
 import Cart from "./pages/cart/cart";
 import Nav from "./components/nav";
 import { ShopContextProvider } from "./Context/shopContext-context";
+import Welcome from "./components/welcome";
 function App() {
   return (
     <div className="App">
       <ShopContextProvider>
         <Router>
           <Nav />
+          <Welcome/>
           <Routes>
             <Route path="/" element={<Shop />} />
             <Route path="/Cart" element={<Cart />} />
