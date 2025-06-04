@@ -24,7 +24,7 @@ Follow these steps to run the project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Behnamfallahi/todo-app.git
+git clone https://github.com/Behnamfallahi/task-manager-react.git
 cd task-manager-react
 
 2. Install dependencies
@@ -57,9 +57,22 @@ Add filters (All, Active, Completed)
 
 Implement dark/light mode toggle
 
+Improve accessibility and keyboard navigation
 🤝 Contributing
 
 Pull requests are welcome! If you’d like to contribute, please fork the repository and use a feature branch.
+Fork the repository
+
+Create your feature branch (git checkout -b feature/your-feature)
+
+Commit your changes (git commit -m 'Add some feature')
+
+Push to the branch (git push origin feature/your-feature)
+
+Open a Pull Request
+
+Please make sure your code follows the existing style and includes relevant tests if applicable.
+
 
 
 📜 License
