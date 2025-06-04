@@ -24,7 +24,7 @@ Follow these steps to run the project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Behnamfallahi/task-manager-react.git
+git clone https://github.com/Behnamfallahi/React-Javascript.git
 cd React-Javascript
 
 2. Install dependencies
