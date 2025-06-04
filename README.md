@@ -1,4 +1,4 @@
-# 📝 task-manager-react
+# 📝 React-Javascript
 
 A clean, simple, and responsive To-Do List application built using **React** and **JavaScript**. It allows users to easily manage daily tasks with an intuitive interface.
 
@@ -25,7 +25,7 @@ Follow these steps to run the project locally:
 
 ```bash
 git clone https://github.com/Behnamfallahi/task-manager-react.git
-cd task-manager-react
+cd React-Javascript
 
 2. Install dependencies
 
@@ -38,7 +38,7 @@ the app will open automatically at http://localhost:3000.
 
 📁 Folder Structure
 
-todo-app/
+React-Javascript/
 ├── public/
 ├── src/
 │   ├── components/
