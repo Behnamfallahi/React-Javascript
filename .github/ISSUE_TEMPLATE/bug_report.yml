@@ -1,0 +1,33 @@
+name: 🐛 Bug Report
+description: Report a bug in the app
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the info below.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of what the bug is.
+      placeholder: The app crashes when I...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the bug?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: System info (OS, browser, etc.)
+      placeholder: Windows 10, Chrome 123
